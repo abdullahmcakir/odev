@@ -1,13 +1,23 @@
-@charset "utf-8"
-
-body {
+body{
     margin: 0;
     padding: 0;
 }
 .container {
     height: 50px;
-    background: red;
-    border-bottom: 2px solid black;
+
+}
+.baslik {
+text-align: center;
+border-bottom: 1px solid black;
+margin-bottom: 24px;
+font-family: 'Benne', serif;
+font-family: 'Open Sans', sans-serif;
+}
+
+.baslik h1{
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 10px;
 }
 .sidebarmenu ul {
     list-style-type: none;
@@ -18,20 +28,21 @@ body {
 .sidebarmenu ul li a {
     text-decoration: none;
     display: block;
-    color: chocolate;
+    color: whitesmoke;
     padding: 30px 0px 10px 25px;
-    border-bottom: 1px solid orangered;
+    border-bottom: 1px solid whitesmoke;
 }
 
 .sidebarmenu {
-    background: darkblue;
+    background:slategray;
     position: fixed;
     width: 200px;
     height: 100%;
     left: -200px;
     padding-top: 50px;
     transition: all 0.5s ease-in;
-    margin-top: 51px;
+    margin-top: 5px;
+    transition: all 275 ms ease-in-out;
 }
 
 .sidebarmenu ul i {
@@ -39,7 +50,7 @@ body {
 }
 
 .sidebarmenu ul li a:hover {
-    color: slategray;
+    color:yellow;
     padding-left: 35px;
     transition: all 1s;
 }
